@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChatCellReceive" customModule="WhereApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wa-bubble_incoming" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-jS-Xq5">
+                        <rect key="frame" x="4.5" y="8" width="69.5" height="35"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpM-pX-vuh">
+                        <rect key="frame" x="20" y="18" width="39.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kis-lv-bGC">
+                        <rect key="frame" x="15" y="42" width="31" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="0e4-Ry-yZ1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cgL-jS-Xq5" firstAttribute="centerX" secondItem="NpM-pX-vuh" secondAttribute="centerX" id="ESF-vE-A5y"/>
+                <constraint firstItem="cgL-jS-Xq5" firstAttribute="width" secondItem="NpM-pX-vuh" secondAttribute="width" constant="30" id="GHg-uS-hEk"/>
+                <constraint firstItem="NpM-pX-vuh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="NrO-U5-n8F"/>
+                <constraint firstItem="NpM-pX-vuh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Spy-Vz-96O"/>
+                <constraint firstAttribute="bottom" secondItem="Kis-lv-bGC" secondAttribute="bottom" constant="3" id="Uvt-LT-0Vh"/>
+                <constraint firstItem="cgL-jS-Xq5" firstAttribute="height" secondItem="NpM-pX-vuh" secondAttribute="height" constant="20" id="Zsa-tN-NTh"/>
+                <constraint firstItem="Kis-lv-bGC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="aGq-G7-swq"/>
+                <constraint firstAttribute="bottom" secondItem="NpM-pX-vuh" secondAttribute="bottom" constant="27" id="dR1-EC-1Uc"/>
+                <constraint firstItem="cgL-jS-Xq5" firstAttribute="top" secondItem="NpM-pX-vuh" secondAttribute="top" constant="-10" id="dea-yh-JNd"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NpM-pX-vuh" secondAttribute="trailing" constant="20" id="zZ4-eE-Tfl"/>
+            </constraints>
+            <size key="customSize" width="50" height="258"/>
+            <connections>
+                <outlet property="imvBackground" destination="cgL-jS-Xq5" id="Mss-9a-72T"/>
+                <outlet property="lblData" destination="Kis-lv-bGC" id="PfF-Jb-thu"/>
+                <outlet property="lblMessage" destination="NpM-pX-vuh" id="d2G-YO-Pyy"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="-70"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="wa-bubble_incoming" width="48" height="35"/>
+    </resources>
+</document>
