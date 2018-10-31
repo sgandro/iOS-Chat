@@ -12,16 +12,24 @@
 		DEBD4BE42179CBC700A89AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBD4BE22179CBC700A89AB6 /* Main.storyboard */; };
 		DEBD4BE62179CBC800A89AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBD4BE52179CBC800A89AB6 /* Assets.xcassets */; };
 		DEBD4BE92179CBC800A89AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBD4BE72179CBC800A89AB6 /* LaunchScreen.storyboard */; };
+		DEBD4BF62179CDBA00A89AB6 /* ChatCellReceive.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBD4BF02179CDBA00A89AB6 /* ChatCellReceive.xib */; };
+		DEBD4BF72179CDBA00A89AB6 /* ChatCellSend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD4BF12179CDBA00A89AB6 /* ChatCellSend.swift */; };
+		DEBD4BF82179CDBA00A89AB6 /* ChatCellReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD4BF22179CDBA00A89AB6 /* ChatCellReceive.swift */; };
+		DEBD4BFB2179CDBA00A89AB6 /* ChatCellSend.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBD4BF52179CDBA00A89AB6 /* ChatCellSend.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DEBD4BDB2179CBC700A89AB6 /* ChatTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBD4BDB2179CBC700A89AB6 /* ChatCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBD4BDE2179CBC700A89AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEBD4BE02179CBC700A89AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEBD4BE32179CBC700A89AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEBD4BE52179CBC800A89AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBD4BE82179CBC800A89AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEBD4BEA2179CBC900A89AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBD4BF02179CDBA00A89AB6 /* ChatCellReceive.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCellReceive.xib; sourceTree = "<group>"; };
+		DEBD4BF12179CDBA00A89AB6 /* ChatCellSend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCellSend.swift; sourceTree = "<group>"; };
+		DEBD4BF22179CDBA00A89AB6 /* ChatCellReceive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCellReceive.swift; sourceTree = "<group>"; };
+		DEBD4BF52179CDBA00A89AB6 /* ChatCellSend.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCellSend.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +54,7 @@
 		DEBD4BDC2179CBC700A89AB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEBD4BDB2179CBC700A89AB6 /* ChatTableView.app */,
+				DEBD4BDB2179CBC700A89AB6 /* ChatCollectionView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +64,10 @@
 			children = (
 				DEBD4BDE2179CBC700A89AB6 /* AppDelegate.swift */,
 				DEBD4BE02179CBC700A89AB6 /* ViewController.swift */,
+				DEBD4BF22179CDBA00A89AB6 /* ChatCellReceive.swift */,
+				DEBD4BF02179CDBA00A89AB6 /* ChatCellReceive.xib */,
+				DEBD4BF12179CDBA00A89AB6 /* ChatCellSend.swift */,
+				DEBD4BF52179CDBA00A89AB6 /* ChatCellSend.xib */,
 				DEBD4BE22179CBC700A89AB6 /* Main.storyboard */,
 				DEBD4BE52179CBC800A89AB6 /* Assets.xcassets */,
 				DEBD4BE72179CBC800A89AB6 /* LaunchScreen.storyboard */,
@@ -67,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEBD4BDA2179CBC700A89AB6 /* ChatTableView */ = {
+		DEBD4BDA2179CBC700A89AB6 /* ChatCollectionView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEBD4BED2179CBC900A89AB6 /* Build configuration list for PBXNativeTarget "ChatTableView" */;
+			buildConfigurationList = DEBD4BED2179CBC900A89AB6 /* Build configuration list for PBXNativeTarget "ChatCollectionView" */;
 			buildPhases = (
 				DEBD4BD72179CBC700A89AB6 /* Sources */,
 				DEBD4BD82179CBC700A89AB6 /* Frameworks */,
@@ -79,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = ChatTableView;
+			name = ChatCollectionView;
 			productName = ChatTableView;
-			productReference = DEBD4BDB2179CBC700A89AB6 /* ChatTableView.app */;
+			productReference = DEBD4BDB2179CBC700A89AB6 /* ChatCollectionView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DEBD4BD62179CBC700A89AB6 /* Build configuration list for PBXProject "ChatTableView" */;
+			buildConfigurationList = DEBD4BD62179CBC700A89AB6 /* Build configuration list for PBXProject "ChatCollectionView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEBD4BDA2179CBC700A89AB6 /* ChatTableView */,
+				DEBD4BDA2179CBC700A89AB6 /* ChatCollectionView */,
 			);
 		};
 /* End PBXProject section */
@@ -123,8 +135,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBD4BE92179CBC800A89AB6 /* LaunchScreen.storyboard in Resources */,
+				DEBD4BFB2179CDBA00A89AB6 /* ChatCellSend.xib in Resources */,
 				DEBD4BE62179CBC800A89AB6 /* Assets.xcassets in Resources */,
 				DEBD4BE42179CBC700A89AB6 /* Main.storyboard in Resources */,
+				DEBD4BF62179CDBA00A89AB6 /* ChatCellReceive.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +151,8 @@
 			files = (
 				DEBD4BE12179CBC700A89AB6 /* ViewController.swift in Sources */,
 				DEBD4BDF2179CBC700A89AB6 /* AppDelegate.swift in Sources */,
+				DEBD4BF72179CDBA00A89AB6 /* ChatCellSend.swift in Sources */,
+				DEBD4BF82179CDBA00A89AB6 /* ChatCellReceive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEBD4BD62179CBC700A89AB6 /* Build configuration list for PBXProject "ChatTableView" */ = {
+		DEBD4BD62179CBC700A89AB6 /* Build configuration list for PBXProject "ChatCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEBD4BEB2179CBC900A89AB6 /* Debug */,
@@ -324,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEBD4BED2179CBC900A89AB6 /* Build configuration list for PBXNativeTarget "ChatTableView" */ = {
+		DEBD4BED2179CBC900A89AB6 /* Build configuration list for PBXNativeTarget "ChatCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEBD4BEE2179CBC900A89AB6 /* Debug */,

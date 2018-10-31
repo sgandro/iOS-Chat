@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ChatTableView.xcodeproj">
+      location = "self:/Users/almavivadeveloper/Development/xcode/ios/ChatTableView/ChatCollectionView.xcodeproj">
    </FileRef>
 </Workspace>

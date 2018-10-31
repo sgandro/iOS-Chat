@@ -59,34 +59,28 @@ class ChatCellReceive: UICollectionViewCell {
     }
 
     
-    var chat: WAChatMessage? {
+    var chat: [String:Any]? {
     
         didSet{
             guard let chat = chat else { return }
             print("chat receive message: \(chat)")
 
-            let attributeName = [NSAttributedStringKey.foregroundColor:txtColor ?? UIColor.black,
-                                 NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 16)]
-            let attributeMessage = [NSAttributedStringKey.foregroundColor:txtColor ?? UIColor.black,
-                                    NSAttributedStringKey.font:UIFont.systemFont(ofSize: 16)]
+            let attributeName = [NSAttributedString.Key.foregroundColor:txtColor ?? UIColor.black,
+                                 NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 16)]
+            let attributeMessage = [NSAttributedString.Key.foregroundColor:txtColor ?? UIColor.black,
+                                    NSAttributedString.Key.font:UIFont.systemFont(ofSize: 16)]
             
-            let name = NSAttributedString(string: "\(chat.nickname.removingPercentEncoding!):\n", attributes: attributeName )
-            let message = NSAttributedString(string: chat.testo, attributes: attributeMessage )
+            let name = NSAttributedString(string: "\(chat["nickname"]!):\n", attributes: attributeName )
+            let message = NSAttributedString(string: chat["message"] as! String, attributes: attributeMessage )
             
             let completeMessage = NSMutableAttributedString(attributedString: name)
             completeMessage.append(message)
             lblMessage.attributedText = completeMessage
             
             let dateFormatter = DateFormatter()
-
-            if
-                let languageCode = RegistrationManager.sharedInstance.language,
-                let lang = InternalLanguage(rawValue: languageCode)?.getLanguageAndRegion()
-            {
-                dateFormatter.locale = Locale(identifier: lang)
-            }
+            dateFormatter.locale = Locale.current
             dateFormatter.dateFormat = "dd MMM HH:mm"
-            lblData.text = dateFormatter.string(from: chat.datainvio as Date)
+            lblData.text = dateFormatter.string(from: chat["sendDate"] as! Date)
             layoutIfNeeded()
 
         }
